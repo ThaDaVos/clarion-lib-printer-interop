@@ -1,13 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup Label="Project">
-		<TargetFramework>net5.0-windows</TargetFramework>
+		<TargetFramework>net7.0-windows</TargetFramework>
 		<Nullable>enable</Nullable>
 		<Platforms>x86</Platforms>
 		<PlatformTarget>x86</PlatformTarget>
 		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
 		<EnableDynamicLoading>true</EnableDynamicLoading>
-		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-		<PublishSingleFile>true</PublishSingleFile>
 	</PropertyGroup>
 	<PropertyGroup Label="DNNE">
 		<!-- EXPERIMENTAL: The native hosting should assume it is in a self-contained scenario. 
@@ -23,7 +21,8 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="DNNE" Version="1.0.33" />
+		<PackageReference Include="ilmerge" Version="3.0.41" />
 		<PackageReference Include="RawPrint.NetStd" Version="1.0.0" />
-		<PackageReference Include="System.Drawing.Common" Version="5.0.3" />
+		<PackageReference Include="System.Drawing.Common" Version="7.0.0" />
 	</ItemGroup>
 </Project>
