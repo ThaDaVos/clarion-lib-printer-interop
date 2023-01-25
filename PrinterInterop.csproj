@@ -21,7 +21,6 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="DNNE" Version="1.0.33" />
-		<PackageReference Include="ilmerge" Version="3.0.41" />
 		<PackageReference Include="RawPrint.NetStd" Version="1.0.0" />
 		<PackageReference Include="System.Drawing.Common" Version="7.0.0" />
 	</ItemGroup>
